@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+<body>
+<a href="./index.html">Index</a>
+<a href="./Tables.html">Tabelas</a>
+<a href="./tags.html">Tags</a>
+<a href="./ValidaForm.html">Valida formulário</a>
+<h1>Formulários HTML</h1>
+<ul>
+  <li>O objetivo da &lt;form&gt; é permitir que os usuários insiram informações e as enviem.</li>
+  <li>O atributo &lt;form&gt;'s determina para onde vão as informações do formulário.<strong>action</strong></li>
+  <li>O atributo &lt;form&gt;'s determina como as informações são enviadas e processadas.<strong>method</strong></li>
+  <li>Para adicionar campos para os usuários inserirem informações, usamos o &lt;input&gt;elemento e definimos o <strong>type</strong> atributo para um campo de nossa escolha:</li>
+  <li>A configuração <stong>type</stong> para <strong>"text"</strong> cria um campo de linha única para entrada de texto.</li>
+  <li>A configuração <strong>type</strong> para <strong>"password"</strong> cria um campo de linha única que censura a entrada de texto.</li>
+  <li>A configuração <strong>type</strong> para <strong>"number"</strong> cria um campo de linha única para entrada de número.</li>
+  <li>A configuração <strong>type</strong> para <strong>"range"</strong> cria um controle deslizante para selecionar a partir de um intervalo de números.</li>
+  <li>A configuração <strong>type</strong> para <strong>"checkbox"</strong> cria uma única caixa de seleção que pode ser emparelhada com outras caixas de seleção.</li>
+  <li>A configuração <strong>type</strong> para <strong>"radio"</strong> cria um botão de opção que pode ser emparelhado com outros botões de opção.</li>
+  <li>A configuração <strong>type</strong> para <strong>"list"</strong> emparelhará &lt;input&gt;com um &lt;datalist&gt;elemento se os id dois forem iguais.</li>
+  <li>A configuração <strong>type</strong> para <strong>"submit"</strong> cria um botão de envio.</li>
+  <li>Um &lt;select&gt; elemento é preenchido com &lt;option&gt; elementos e renderiza uma seleção de lista suspensa.</li>
+  <li>Um &lt;datalist&gt;elemento é preenchido com &lt;option&gt;elementos e funciona com um &lt;input&gt;para pesquisar opções.</li>
+  <li>Um &lt;textarea&gt; elemento é um campo de entrada de texto que possui uma área personalizável.</li>
+  <li>Quando a &lt;form&gt; é enviado, o namedos campos que aceitam entrada e o <strong>value</strong> desses campos são enviados como <strong>name=value</strong> pares.</li>
+  <li>O uso do &lt;form&gt; elemento em conjunto com os outros elementos listados acima nos permite criar sites que levam em consideração os desejos e necessidades de nossos usuários. Aproveite para pegar o que aprendeu e aplicar!</li>
+</ul>
+<form action="" method="POST">
+  <section class="texto">
+    <label for="texto">Type text</label>
+    <input type="text" id="texto" name="texto">
+  </section>
+  <br>
+  <section class="numero">
+    <label for="numero">Type number</label>
+    <input type="number" id="numero" name="numero">
+  </section>
+  <br>
+  <section class="range">
+    <label for="range">Type range</label>
+    <input type="range" id="range" name="range" min="1" max="5" step="0.5">
+  </section>
+  <br>
+  <section class="checkbox">
+    <label for="checkbox">Type checkbox</label>
+    <input type="checkbox" id="checkbox" name="checkbox">
+  </section>
+  <br>
+  <section class="radio">
+    <label for="radio">type radio</label>
+    <input type="radio" id="radio" name="radio" value="radio">
+  </section>
+  <br>
+  <section class="select">
+    <label for="select">Type select</label>
+    <select id="select" name="select">
+      <option value="opcao1">Opção 1</option>
+      <option value="opcao2">Opção 2</option>
+      <option value="opcao3">Opção 3</option>
+    </select>
+  </section>
+  <br>
+  <section class="list">
+    <label for="lista">Type list</label>
+    <input list="listas" id="lista" name="lista">
+    <datalist id="listas">
+      <option value="opção 1"></option>
+      <option value="opção 2"></option>
+      <option value="opção 3"></option>
+      <option value="opção 4"></option>
+    </datalist>
+  </section>
+  <br>
+  <section class="textarea">
+    <label for="areatexto">textarea</label>
+    <br>
+    <textarea id="areatexto" name="areatexto" cols="30" rows="5">Digite aqui</textarea>
+  </section>
+</form>
+</body>
+</html>
