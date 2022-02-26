@@ -1,0 +1,23 @@
+.vermelho {
+  color:red;
+}
+
+.negrito{
+  font-weight: bold;
+}
+
+#article-title{
+  font-family: cursive;
+}
+
+a[href]{
+  color:magenta;
+}
+
+#hover:hover{
+  color:red;
+}
+
+.lista li {
+  color:blueviolet;
+}

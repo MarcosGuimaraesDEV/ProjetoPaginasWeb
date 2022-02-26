@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seletores</title>
+  <link href="./seletores.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Index</a></li>
+        <li><a href="./Tables.html">Tabelas</a></li>
+        <li><a href="./formulario.html">Formulário</a></li>
+        <li><a href="./ValidaForm.html">Validar Formulário</a></li>
+        <li><a href="./htmlSemantico.html">Semântica HTML</a></li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <p>O seletor de tipo seleciona todos os elementos de um determinado tipo. Bem,
+    <p>o seletor universal seleciona todos os elementos de qualquer tipo.</p>
+    O seletor universal usa o *caractere no mesmo lugar onde você especificou o seletor
+    de tipo em um conjunto de regras.</p>
+    <!--Olhar seletores.css para ver o exemplo de classes-->
+    <p class="vermelho negrito">CSS não se limita a selecionar elementos por seu tipo. Como você sabe, os elementos HTML também podem ter
+      atributos. Ao trabalhar com HTML e CSS, um atributo de classe é uma das formas mais comuns de
+      selecionar um elemento.
+    </p>
+    <p id="article-title">Muitas vezes é importante selecionar um único elemento com CSS para dar a ele seu próprio estilo único.
+      Se um elemento HTML precisar ser estilizado de forma exclusiva, podemos fornecer um ID usando o idatributo.</p>
+    <p>Ao contrário de classque aceita vários valores e pode ser usado amplamente em um documento HTML,
+      um elemento idpode ter apenas um único valor e ser usado apenas uma vez por página.</p>
+    <p>Para selecionar o ID de um elemento com CSS, adicionamos o idnome com um sinal numérico ( #).
+      Por exemplo, se quiséssemos selecionar o elemento HTML no exemplo acima, ficaria assim:</p>
+    <p>#large-title&#123;<br>&#125;</p>
+    <p>O id nome é large-title, portanto o seletor CSS para ele é #large-title.</p>
+    <h3>Pseudoclasse</h3>
+    <p>Você pode ter observado como a aparência de certos elementos pode mudar, ou estar em um estado diferente,
+      após determinadas interações do usuário. Por exemplo:</p>
+    <ul class="lista">
+      <!--elementos aninhados <li> são descendentes de <ul> e podem ser selecionados -->
+      <li>Quando você clica em um &lt;input&gt;elemento, uma borda azul é adicionada mostrando que ele está em foco.</li>
+      <li>Quando você clica em um &lt;a&gt;link azul para visitar outra página, mas quando você retorna o texto do
+        link fica roxo.</li>
+      <li>Quando você está preenchendo um formulário e o botão de envio fica acinzentado e desabilitado.
+        Mas quando todos os campos estiverem preenchidos, o botão fica com a cor indicando que está ativo .</li>
+      <p>Estes são todos exemplos de seletores de pseudo-classe em ação! Na verdade, :focus, :visited, :disabled,
+        e :activesão todas pseudoclasses. Fatores como interação do usuário, navegação no site e posição na árvore
+        do documento podem dar aos elementos um estado diferente com pseudo-classe.</p>
+      <p id="hover">Uma pseudoclasse pode ser anexada a qualquer seletor. É sempre escrito como dois pontos : seguido de um nome.
+        Por exemplo p:hover.</p>
+    </ul>
+    <h3>Especificidade</h3>
+    <p>Especificidade é a ordem pela qual o navegador decide quais estilos CSS serão exibidos. Uma prática recomendada
+      em CSS é estilizar elementos usando o menor grau de especificidade para que, se um elemento precisar de um novo
+      estilo, seja fácil de substituir.</p>
+    <p>IDs são o seletor mais específico em CSS, seguido por classes e, por fim, tipo. Por exemplo,
+      considere o seguinte HTML e CSS:</p>
+    &lt;h1 class="headline"&gt;Breaking News&lt;/h1&gt;
+    <br>
+    h1&#123;
+    <br>
+    color:red;
+    <br>
+    <br>
+    &#125;
+    .headline &#123;
+    <br>
+    color:firebrick;
+    <br>
+    &#125;
+    <br>
+    <h3>Encadeamento</h3>
+    <p>Ao escrever regras CSS, é possível exigir que um elemento HTML tenha dois ou mais seletores CSS ao mesmo tempo.
+      Isso é feito combinando vários seletores, que chamaremos de encadeamento. Por exemplo, se houvesse uma special classe
+      para &lt;h1&gt;elementos, o CSS ficaria assim:</p>
+    h1.special &#123;
+    <br>
+    &#125;
+    <p>O código acima selecionaria apenas os &lt;h1&gt;elementos com uma classe de special. Se um &lt;p&gt;elemento também tiver
+    uma classe de special, a regra no exemplo não estilizará o parágrafo.</p>
+    <p>Ao longo desta lição, você aprendeu como selecionar elementos HTML com CSS e aplicar estilos a eles.
+      Vamos rever o que você aprendeu:</p>
+    <ul>
+      <li>CSS pode selecionar elementos HTML por tipo, classe, ID e atributo.</li>
+      <li>Todos os elementos podem ser selecionados usando o seletor universal.</li>
+      <li>Um elemento pode ter diferentes estados usando o seletor de pseudoclasse.</li>
+      <li>Várias classes CSS podem ser aplicadas a um elemento HTML.</li>
+      <li>As classes podem ser reutilizáveis, enquanto os IDs podem ser usados apenas uma vez.</li>
+      <li>Os IDs são mais específicos do que as classes e as classes são mais específicas do que o tipo.
+        Isso significa que os IDs substituirão qualquer estilo de uma classe e as classes substituirão qualquer
+        estilo de um seletor de tipo.</li>
+      <li>Vários seletores podem ser encadeados para selecionar um elemento.
+        Isso aumenta a especificidade, mas pode ser necessário.</li>
+      <li>Elementos aninhados podem ser selecionados separando os seletores com um espaço.</li>
+      <li>Vários seletores não relacionados podem receber os mesmos estilos separando os nomes dos seletores com vírgulas.</li>
+    </ul>
+
+  </main>
+
+
+
+</body>
+</html>
