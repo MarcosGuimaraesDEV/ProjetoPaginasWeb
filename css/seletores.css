@@ -21,3 +21,12 @@ a[href]{
 .lista li {
   color:blueviolet;
 }
+/* Propriedades da borda*/
+#borda{
+  border: 3px solid blue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+
