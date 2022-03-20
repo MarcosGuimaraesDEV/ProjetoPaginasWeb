@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cor</title>
+  <link href="css/seletores.css" rel="stylesheet">
+</head>
+  <header>
+    <h1 id="aviso">Essas páginas não estão prontas!!!</h1>
+    <nav>
+      <ul>
+        <li><a href = "./index.html">Index</a></li>
+        <li><a href = "./tags.html">Tags</a></li>
+        <li><a href = "./formulario.html">Formulário</a></li>
+        <li><a href = "./ValidaForm.html">Validar Formulário</a></li>
+        <li><a href = "./htmlSemantico.html">HTML Semântico</a></li>
+        <li><a href = "./IntroCSS.html">Intro CSS</a></li>
+        <li><a href = "./seletores.html">Seletores HTML</a></li>
+        <li><a href = "./regrasVisuais.html">Regras Visuais</a></li>
+        <li><a href = "./modeloCaixa.html">Modelo de Caixa</a></li>
+        <li><a href ="./posicionamento.html">Posicionamento</a></li>
+        <li><a href="./cor.html">Cor</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+  <main>
+    <h1>Matriz Saturação e Luminosidade</h1>
+    <p>O esquema de cores RGB é conveniente porque é muito próximo de como os computadores representam as cores
+      internamente. Há outro sistema igualmente poderoso em CSS chamado esquema de cores hue-saturation-lightness,
+      abreviado como HSL .</p>
+    <p>A sintaxe para HSL é semelhante à forma decimal de RGB, embora seja diferente de maneiras importantes.
+      O primeiro número representa o grau de matiz e pode estar entre 0 e 360. O segundo e terceiro números são
+      porcentagens que representam saturação e luminosidade, respectivamente. Aqui está um exemplo:</p>
+    <p id="exemplo">color: hsl(120, 60%, 70%);</p>
+    <p>Matiz é o primeiro número. Refere-se a um ângulo em uma roda de cores. Vermelho é 0 graus, Verde é 120 graus,
+      Azul é 240 graus, e então volta para Vermelho em 360. Você pode ver um exemplo de uma roda de cores abaixo.</p>
+    <img src="img/hsl.svg" alt="matriz de cores" width="420" height="420">
+    <p>Saturação refere-se à intensidade ou pureza da cor. A saturação aumenta para 100% à medida que a cor se torna
+      mais rica. A saturação diminui para 0% à medida que a cor se torna mais cinzenta.</p>
+    <p>A luminosidade refere-se a quão clara ou escura é a cor. A meio caminho, ou 50%, é a leveza normal.
+      Imagine um dimmer deslizante em um interruptor de luz que começa no meio do caminho.
+      Deslizar o dimmer até 100% torna a cor mais clara, mais próxima do branco. Deslizar o dimmer para 0% torna a
+      cor mais escura, mais próxima do preto.</p>
+    <p>HSL é conveniente para ajustar cores. Em RGB, tornar a cor um pouco mais escura pode afetar todos os
+      três componentes de cor. No HSL, isso é tão fácil quanto alterar o valor da luminosidade. O HSL também
+      é útil para criar um conjunto de cores que funcionem bem juntas, selecionando várias cores que têm a mesma
+      luminosidade e saturação, mas tons diferentes.</p>
+    <h1>Opacidade e Alfa</h1>
+    <p>odas as cores que vimos até agora eram opacas ou não transparentes. Quando sobrepomos dois elementos opacos,
+      nada do elemento inferior aparece através do elemento superior. Neste exercício, alteraremos a opacidade ,
+      ou a quantidade de transparência, de algumas cores para que alguns ou todos os elementos inferiores sejam
+      visíveis através de um elemento de cobertura.</p>
+    <p>Para usar a opacidade no esquema de cores HSL, use hsla em vez de hsle quatro valores em vez de três.
+      Por exemplo:</p>
+    <p id="exemplo">color: hsla(34, 100%, 50%, 0.1);</p>
+    <p>Os três primeiros valores funcionam da mesma forma que hsl. O quarto valor (que não vimos antes) é o alpha.
+      Este último valor às vezes é chamado de opacidade.</p>
+    <p>Alfa é um número decimal de zero a um. Se alfa for zero, a cor será completamente transparente.
+      Se alfa for um, a cor será opaca. O valor para meio transparente seria 0.5.</p>
+    <p>Você pode pensar no valor alfa como “a quantidade de fundo para misturar com o primeiro plano".
+      Quando o alfa de uma cor estiver abaixo de um, qualquer cor atrás dela será mesclada. A mesclagem acontece
+      para cada pixel; não ocorre desfoque.</p>
+    <p>O esquema de cores RGB tem uma sintaxe semelhante para opacidade, rgba. Novamente,
+      os três primeiros valores funcionam da mesma forma rgbe o último valor é o alfa. Aqui está um exemplo:</p>
+    <p id="exemplo">color: rgba(234, 45, 98, 0.33);</p>
+    <p>Um pouco não convencional, mas ainda vale a pena mencionar como as cores hexadecimais também podem ter um
+      valor alfa. Adicionando um valor hexadecimal de dois dígitos ao final da representação de seis dígitos
+      ( #52BC8280), ou um valor hexadecimal de um dígito ao final da representação de três dígitos (#F003),
+      você pode alterar a opacidade de uma cor hexadecimal. A opacidade hexadecimal varia de 00(transparente)
+      a FF(opaco).</p>
+    <p>Alfa só pode ser usado com cores HSL, RGB e hexadecimais; não podemos adicionar o valor alfa para nomear
+      cores como green.</p>
+    <p>Há, no entanto, uma palavra-chave de cor nomeada para opacidade zero, transparent.
+      É equivalente a rgba(0, 0, 0, 0)e é usado como qualquer outra palavra-chave de cor:</p>
+    <p id="exemplo">color: transparent;</p>
+    <p>Existem quatro maneiras de representar cores em CSS:</p>
+    <ul>
+      <li>Cores nomeadas—há mais de 140 cores nomeadas, que você pode revisar
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">aqui</a>.</li>
+      <li>Cores hexadecimais ou hexadecimais</li>
+      <li>Hexadecimal é um sistema numérico com dezesseis dígitos, de 0 a 9 seguidos de “A” a “F”.</li>
+      <li>Os valores hexadecimais sempre começam #e especificam valores de vermelho, azul e verde usando números
+        hexadecimais como #23F41A.</li>
+      <li>Valores hexadecimais de seis dígitos com valores duplicados para cada valor RGB podem ser reduzidos a
+        três dígitos.</li>
+      <li>RGB</li>
+      <li>As cores RGB usam a rgb()sintaxe com um valor para vermelho, um valor para azul e um valor para verde.</li>
+      <li>Os valores RGB variam de 0 a 255 e são assim: rgb(7, 210, 50).</li>
+      <li>HSL</li>
+      <li>HSL significa matiz (a cor em si), saturação (a intensidade da cor) e leveza (quão clara ou escura é
+        uma cor).</li>
+      <li>O matiz varia de 0 a 360 e a saturação e a luminosidade são representadas como porcentagens assim:
+        hsl(200, 20%, 50%).</li>
+      <li>Você pode adicionar opacidade à cor em RGB e HSL adicionando um quarto valor, a, que é representado
+        como uma porcentagem.</li>
+    </ul>
+
+
+
+  </main>
+
+</body>
+</html>

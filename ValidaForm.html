@@ -3,34 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>validação de formulário</title>
+  <link href="css/seletores.css" rel="stylesheet">
 </head>
 <body>
-<h1>validação de Formulário</h1>
-<a href="./index.html">Index</a>
-<a href="./Tables.html">Tabelas</a>
-<a href="./tags.html">tags</a>
-<a href="./formulario.html">Formulário</a>
-<ul>
-  <li>As validações do lado do cliente acontecem no navegador antes que as informações sejam enviadas para um servidor.</li>
-  <li>Adicionar o <em>required</em> atributo a um elemento relacionado à entrada validará que o campo de entrada contém informações.</li>
-  <li>Atribuir um valor ao <em>min</em> atributo de um elemento de entrada numérica validará um valor mínimo aceitável.</li>
-  <li>A atribuição de um valor ao <em>max</em> atributo de um elemento de entrada numérico validará um valor máximo aceitável.</li>
-  <li>A atribuição de um valor ao <em>minlength</em> atributo de um elemento de entrada de texto validará um número mínimo aceitável de caracteres.</li>
-  <li>A atribuição de um valor ao <em>maxlength</em> atributo de um elemento de entrada de texto validará um número máximo aceitável de caracteres.</li>
-  <li>A atribuição de um regex <em>pattern</em> corresponde à entrada do regex fornecido.</li>
-  <li>Se as validações em um &lt;form&gt;não forem aprovadas, o usuário receberá uma mensagem explicando o motivo e &lt;form&gt;não poderá ser enviado.</li>
-  <li>Essas verificações rápidas ajudam a garantir que os dados de entrada estejam corretos e seguros para nossos servidores. Também ajuda a fornecer aos usuários
-    feedback imediato sobre o que eles precisam corrigir, em vez de esperar que um servidor envie de volta essas informações.</li>
-  <p>Sing Up</p>
-  <!-- Esse form não faz nada por enquanto-->
-  <form action="index.html" method="post">
-    <label for="log">Login:</label>
-    <input type="text" id="log" name="log" minlength="5" maxlength="15" pattern="[a-z]+">
-    <label for="password">Senha:</label>
-    <input type="password" id="password" name="password" minlength="5" maxlength="15">
-    <br>
-    <input type="submit" value="submit">
-  </form>
-</ul>
+<header>
+    <h1 id="aviso">Essas páginas não estão prontas!!!</h1>
+    <nav>
+      <ul>
+        <li><a href = "./index.html">Index</a></li>
+        <li><a href = "./tags.html">Tags</a></li>
+        <li><a href = "./formulario.html">Formulário</a></li>
+        <li><a href = "./ValidaForm.html">Validar Formulário</a></li>
+        <li><a href = "./htmlSemantico.html">HTML Semântico</a></li>
+        <li><a href = "./IntroCSS.html">Intro CSS</a></li>
+        <li><a href = "./seletores.html">Seletores HTML</a></li>
+        <li><a href = "./regrasVisuais.html">Regras Visuais</a></li>
+        <li><a href = "./modeloCaixa.html">Modelo de Caixa</a></li>
+        <li><a href ="./posicionamento.html">Posicionamento</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Validação de Formulário</h1>
+    <ul>
+      <li>As validações do lado do cliente acontecem no navegador antes que as informações sejam enviadas para um servidor.</li>
+      <li>Adicionar o <em>required</em> atributo a um elemento relacionado à entrada validará que o campo de entrada contém informações.</li>
+      <li>Atribuir um valor ao <em>min</em> atributo de um elemento de entrada numérica validará um valor mínimo aceitável.</li>
+      <li>A atribuição de um valor ao <em>max</em> atributo de um elemento de entrada numérico validará um valor máximo aceitável.</li>
+      <li>A atribuição de um valor ao <em>minlength</em> atributo de um elemento de entrada de texto validará um número mínimo aceitável de caracteres.</li>
+      <li>A atribuição de um valor ao <em>maxlength</em> atributo de um elemento de entrada de texto validará um número máximo aceitável de caracteres.</li>
+      <li>A atribuição de um regex <em>pattern</em> corresponde à entrada do regex fornecido.</li>
+      <li>Se as validações em um &lt;form&gt;não forem aprovadas, o usuário receberá uma mensagem explicando o motivo e &lt;form&gt;não poderá ser enviado.</li>
+      <li>Essas verificações rápidas ajudam a garantir que os dados de entrada estejam corretos e seguros para nossos servidores. Também ajuda a fornecer aos usuários
+        feedback imediato sobre o que eles precisam corrigir, em vez de esperar que um servidor envie de volta essas informações.</li>
+      <p>Sing Up</p>
+      <!-- Esse form não faz nada por enquanto-->
+      <form action="index.html" method="post">
+        <label for="log">Login:</label>
+        <input type="text" id="log" name="log" minlength="5" maxlength="15" pattern="[a-z]+">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" minlength="5" maxlength="15">
+        <br>
+        <input type="submit" value="submit">
+      </form>
+    </ul>
+  </main>
 </body>
 </html>

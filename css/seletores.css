@@ -13,7 +13,9 @@
 a[href]{
   color:magenta;
 }
-
+a:hover{
+  color: red;
+}
 #hover:hover{
   color:red;
 }
@@ -27,6 +29,74 @@ a[href]{
   border-radius: 10px;
   padding: 10px;
 }
+/* A caixa não é afetada pela espessura da borda*/
+*{
+  box-sizing: border-box;
+}
 
+#aviso{
+  position: fixed;
+  right: 0px;
+  top: 100px;
+  color:rebeccapurple;
+  z-index: 2;
+  background: red;
+}
 
+#sticky{
+  position: sticky;
+  background:red;
+  top: 240px;
+}
+/* Ao ativar o <p> ele ficará acima de #sticky e abaixo de #aviso. Sticky por pafrão tem o z-index como zero
+p{
+  position: relative;
+  z-index: 1;
+  background: blue;
+  color: yellow;
+}
+*/
 
+.inline{
+  display: inline;
+}
+
+#block{
+  display:block;
+}
+nav li{
+  display: inline-block;
+  width: 125px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background:greenyellow;
+  text-align: center;
+}
+
+header{
+  position: fixed;
+  z-index: 10;
+  background-color: magenta;
+  width:100%;
+  font-family: "Calibri Light"
+}
+
+main{
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#exemplo{
+  background-color: #000000;
+  color:#ff0000
+}
