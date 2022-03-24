@@ -1,80 +1,61 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="pt-br" >
 <head>
-  <meta charset="utf-8">
-  <title></title>
+  <meta charset="UTF-8">
+  <title>Portfólio</title>
   <link href="css/seletores.css" rel="stylesheet">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+  <link href="css/portfolio.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Add your site or application content here -->
-  <header>
-    <h1 id="aviso">Essas páginas não estão prontas!!!</h1>
-    <nav>
-      <ul>
-        <li><a href = "./index.html">Index</a></li>
-        <li><a href = "./tags.html">Tags</a></li>
-        <li><a href = "./formulario.html">Formulário</a></li>
-        <li><a href = "./ValidaForm.html">Validar Formulário</a></li>
-        <li><a href = "./htmlSemantico.html">HTML Semântico</a></li>
-        <li><a href = "./IntroCSS.html">Intro CSS</a></li>
-        <li><a href = "./seletores.html">Seletores HTML</a></li>
-        <li><a href = "./regrasVisuais.html">Regras Visuais</a></li>
-        <li><a href = "./modeloCaixa.html">Modelo de Caixa</a></li>
-        <li><a href ="./posicionamento.html">Posicionamento</a></li>
-      </ul>
-    </nav>
-  </header>
-  <h1><strong>Estudando Html</strong></h1>
-  <div id="intro">
+  <nav class="links">
     <ul>
-      <li>HTML significa Hyper Text Markup Language e é usado para criar a estrutura e o conteúdo de uma página da web.</li>
-      <li>A maioria dos elementos HTML contém tags de abertura e fechamento com texto bruto ou outras tags HTML entre eles.</li>
-      <li>Elementos HTML podem ser aninhados dentro de outros elementos. O elemento delimitado é o filho do elemento pai delimitador.</li>
+      <li><a href = "./index.html">Perfil</a></li>
+      <li><a href = "./tags.html">Tags</a></li>
+      <li><a href="./Tables.html">Tabelas</a></li>
+      <li><a href = "./formulario.html">Formulário</a></li>
+      <li><a href = "./ValidaForm.html">Validar Formulário</a></li>
+      <li><a href = "./htmlSemantico.html">HTML Semântico</a></li>
+      <li><a href = "./IntroCSS.html">Intro CSS</a></li>
+      <li><a href = "./seletores.html">Seletores HTML</a></li>
+      <li><a href = "./regrasVisuais.html">Regras Visuais</a></li>
+      <li><a href = "./modeloCaixa.html">Modelo de Caixa</a></li>
+      <li><a href ="./posicionamento.html">Posicionamento</a></li>
+      <li><a href="./cor.html">Cores</a></li>
     </ul>
+  </nav>
+  <div class="container">
+    <header class="cabecalho">
+      <div class="perfil">
+        <img class="foto-perfil" src="https://avatars.githubusercontent.com/u/100432994?v=4"/>
+        <div class="info-perfil">
+          <h1>Estudante de Programação</h1>
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <a href="https://www.linkedin.com/in/marcos-vinicius-guimar%C3%A3es-711a9742/">Linkedin</a>
+        </div>
+      </div>
+      <div class="tema">
+        <button onclick="mudaModo()">Alterar Tema</button>
+      </div>
+    </header>
+    <main class="portfolio">
+      <div class="projetos">
+        <ul>
+          Projetos
+          <li>
+            <p><a href="https://codepen.io/MarcosGuimaraes/pen/BaJzZNq">Super Trunfo</a></p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BaJzZNq"
+               data-user="MarcosGuimaraes" style="height: 300px; box-sizing: border-box; display: flex;
+               align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+          <span>See the Pen <a href="https://codepen.io/MarcosGuimaraes/pen/BaJzZNq">
+          Super Trunfo - Dia 8</a> by Marcos Guimaraes (<a href="https://codepen.io/MarcosGuimaraes">@MarcosGuimaraes</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </li>
+        </ul>
+      </div>
+    </main>
   </div>
-  <div id="tags">
-    <ul>
-      <li><em>&lt;body&gt;</em>Qualquer conteúdo visível deve ser colocado dentro das tags de abertura e fechamento.</li>
-      <li>Títulos e subtítulos, &lt;h1&gt;para &lt;h6&gt;tags, são usados para fornecer títulos para seções de conteúdo.</li>
-      <li>&lt;p&gt;e &lt;span&gt;as &lt;div&gt;tags especificam texto ou blocos.</li>
-      <li>As tags &lt;em&gt;e &lt;strong&gt;são usadas para enfatizar o texto.</li>
-      <li>As quebras de linha são criadas com a &lt;br&gt;tag.</li>
-      <li>As listas ordenadas ( &lt;ol&gt;) são numeradas e as não ordenadas ( &lt;ul&gt;) são marcadas.</li>
-      <li>Imagens ( &lt;img&gt;) e vídeos ( &lt;video&gt;) podem ser adicionados vinculando a uma fonte existente.</li>
-    </ul>
-  </div>
-  <div id="media">
-    <img src="tile.png" width="240" height="240" alt="Estrela"/>
-    <video src="end.mp4" width="320" height="240" controls>
-      not supported
-    </video>
-  </div>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
+  <script  src="js/main.js"></script>
 </body>
 </html>

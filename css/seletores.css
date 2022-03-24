@@ -1,3 +1,7 @@
+body{
+  background: linear-gradient(236.85deg, #DBE9EE 27.26%, #FAEBD7FF 96.03%);
+}
+
 .vermelho {
   color:red;
 }
@@ -11,7 +15,8 @@
 }
 
 a[href]{
-  color:magenta;
+  color:gold;
+  text-decoration: none;
 }
 a:hover{
   color: red;
@@ -69,21 +74,24 @@ nav li{
   width: 125px;
   border: 1px solid black;
   border-radius: 5px;
-  background:greenyellow;
+  background:#6B87A9;
   text-align: center;
 }
 
-header{
+.links {
   position: fixed;
+  top: 0px;
+  left: 0px;
   z-index: 10;
   background-color: magenta;
   width:100%;
+  height: 40px;
   font-family: "Calibri Light"
 }
 
 main{
-  background-color: #DBE9EE;
-  box-sizing: border-box;
+ /* background-color: #DBE9EE;
+  box-sizing: border-box;*/
   padding: 40px;
   width: 100%;
   position: relative;
@@ -99,4 +107,10 @@ img{
 #exemplo{
   background-color: #000000;
   color:#ff0000
+}
+
+video{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }

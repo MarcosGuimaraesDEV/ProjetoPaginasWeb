@@ -8,10 +8,11 @@
 <body>
   <header>
     <h1 id="aviso">Essas páginas não estão prontas!!!</h1>
-    <nav>
+    <nav class="links">
       <ul>
-        <li><a href = "./index.html">Index</a></li>
+        <li><a href = "./index.html">Perfil</a></li>
         <li><a href = "./tags.html">Tags</a></li>
+        <li><a href="./Tables.html">Tabelas</a></li>
         <li><a href = "./formulario.html">Formulário</a></li>
         <li><a href = "./ValidaForm.html">Validar Formulário</a></li>
         <li><a href = "./htmlSemantico.html">HTML Semântico</a></li>
@@ -20,27 +21,52 @@
         <li><a href = "./regrasVisuais.html">Regras Visuais</a></li>
         <li><a href = "./modeloCaixa.html">Modelo de Caixa</a></li>
         <li><a href ="./posicionamento.html">Posicionamento</a></li>
+        <li><a href="./cor.html">Cores</a></li>
       </ul>
     </nav>
   </header>
   <main>
+    <h1><strong>Estudando Html</strong></h1>
+    <div id="intro">
+    <ul>
+      <li>HTML significa Hyper Text Markup Language e é usado para criar a estrutura e o conteúdo de uma página da web.</li>
+      <li>A maioria dos elementos HTML contém tags de abertura e fechamento com texto bruto ou outras tags HTML entre eles.</li>
+      <li>Elementos HTML podem ser aninhados dentro de outros elementos. O elemento delimitado é o filho do elemento pai delimitador.</li>
+    </ul>
+  </div>
+  <div id="tags">
+    <ul>
+      <li><em>&lt;body&gt;</em>Qualquer conteúdo visível deve ser colocado dentro das tags de abertura e fechamento.</li>
+      <li>Títulos e subtítulos, &lt;h1&gt;para &lt;h6&gt;tags, são usados para fornecer títulos para seções de conteúdo.</li>
+      <li>&lt;p&gt; e &lt;span&gt; as &lt;div&gt;tags especificam texto ou blocos.</li>
+      <li>As tags &lt;em&gt; e &lt;strong&gt; são usadas para enfatizar o texto.</li>
+      <li>As quebras de linha são criadas com a &lt;br&gt; tag.</li>
+      <li>As listas ordenadas (&lt;ol&gt;) são numeradas e as não ordenadas ( &lt;ul&gt;) são marcadas.</li>
+      <li>Imagens (&lt;img&gt;) e vídeos (&lt;video&gt;) podem ser adicionados vinculando a uma fonte existente.</li>
+    </ul>
+  </div>
+  <div id="media">
+    <img src="tile.png" width="240" height="240" alt="Estrela"/>
+    <video src="end.mp4" width="320" height="240" controls>
+      not supported
+    </video>
+  </div>
     <p>Embora algumas tags tenham um propósito muito específico, como tags de imagem e vídeo,
       a maioria das tags é usada para descrever o conteúdo que elas cercam, o que nos ajuda a modificar
       e estilizar nosso conteúdo posteriormente.
-      Há um número aparentemente infinito de tags para usar (muito mais do que ensinamos). Saber quando usar cada um
+      Há um número aparentemente infinito de tags para usar. Saber quando usar cada um
       é baseado em como você deseja descrever o conteúdo do seu HTML. Tags descritivas e bem escolhidas são uma chave
       para o desenvolvimento web de alta qualidade. Uma lista completa de tags HTML disponíveis pode ser encontrada na
       documentação do
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank"><em>Mozilla</em></a>.</p>
-    <p>Vamos rever o que você aprendeu meu parça:</p>
     <ul>
       <li>A &lt;!DOCTYPE html&gt;declaração deve ser sempre a primeira linha de código em seus arquivos HTML. Isso
         permite que o navegador saiba qual versão do HTML esperar.</li>
-      <li>O &lt;html&gt;elemento conterá todo o seu código HTML.</li>
-      <li>As informações sobre a página da Web, como o título, pertencem &lt;head&gt;à página.</li>
-      <li>Você pode adicionar um título à sua página da Web usando o &lt;title&gt;elemento, dentro do cabeçalho.</li>
+      <li>O &lt;html&gt; elemento conterá todo o seu código HTML.</li>
+      <li>As informações sobre a página da Web, como o título, pertencem &lt;head&gt; à página.</li>
+      <li>Você pode adicionar um título à sua página da Web usando o &lt;title&gt; elemento, dentro do cabeçalho.</li>
       <li>O título de uma página da Web aparece na guia de um navegador.</li>
-      <li>As tags de âncora ( &lt;a&gt;) são usadas para vincular a páginas internas, páginas externas ou conteúdo na
+      <li>As tags de âncora (&lt;a&gt;) são usadas para vincular a páginas internas, páginas externas ou conteúdo na
         mesma página.</li>
       <li>Você pode criar seções em uma página da Web e pular para elas usando &lt;a&gt;tags e adicionando ids
         aos elementos para os quais deseja pular.</li>

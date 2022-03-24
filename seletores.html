@@ -6,12 +6,11 @@
   <link href="css/seletores.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 id="aviso">Essas páginas não estão prontas!!!</h1>
-    <nav>
+  <nav class="links">
       <ul>
-        <li><a href = "./index.html">Index</a></li>
+        <li><a href = "./index.html">Perfil</a></li>
         <li><a href = "./tags.html">Tags</a></li>
+        <li><a href="./Tables.html">Tabelas</a></li>
         <li><a href = "./formulario.html">Formulário</a></li>
         <li><a href = "./ValidaForm.html">Validar Formulário</a></li>
         <li><a href = "./htmlSemantico.html">HTML Semântico</a></li>
@@ -20,9 +19,9 @@
         <li><a href = "./regrasVisuais.html">Regras Visuais</a></li>
         <li><a href = "./modeloCaixa.html">Modelo de Caixa</a></li>
         <li><a href ="./posicionamento.html">Posicionamento</a></li>
+        <li><a href="./cor.html">Cores</a></li>
       </ul>
     </nav>
-  </header>
   <main>
     <p>O seletor de tipo seleciona todos os elementos de um determinado tipo. Bem,
     <p>o seletor universal seleciona todos os elementos de qualquer tipo.</p>
@@ -34,10 +33,10 @@
       selecionar um elemento.
     </p>
     <p id="article-title">Muitas vezes é importante selecionar um único elemento com CSS para dar a ele seu próprio estilo único.
-      Se um elemento HTML precisar ser estilizado de forma exclusiva, podemos fornecer um ID usando o idatributo.</p>
-    <p>Ao contrário de classque aceita vários valores e pode ser usado amplamente em um documento HTML,
-      um elemento idpode ter apenas um único valor e ser usado apenas uma vez por página.</p>
-    <p>Para selecionar o ID de um elemento com CSS, adicionamos o idnome com um sinal numérico ( #).
+      Se um elemento HTML precisar ser estilizado de forma exclusiva, podemos fornecer um ID usando o id atributo.</p>
+    <p>Ao contrário de classe que aceita vários valores e pode ser usado amplamente em um documento HTML,
+      um elemento id pode ter apenas um único valor e ser usado apenas uma vez por página.</p>
+    <p>Para selecionar o ID de um elemento com CSS, adicionamos o id nome com um sinal numérico (#).
       Por exemplo, se quiséssemos selecionar o elemento HTML no exemplo acima, ficaria assim:</p>
     <p>#large-title&#123;<br>&#125;</p>
     <p>O id nome é large-title, portanto o seletor CSS para ele é #large-title.</p>
@@ -86,8 +85,6 @@
     &#125;
     <p>O código acima selecionaria apenas os &lt;h1&gt;elementos com uma classe de special. Se um &lt;p&gt;elemento também tiver
     uma classe de special, a regra no exemplo não estilizará o parágrafo.</p>
-    <p>Ao longo desta lição, você aprendeu como selecionar elementos HTML com CSS e aplicar estilos a eles.
-      Vamos rever o que você aprendeu:</p>
     <ul>
       <li>CSS pode selecionar elementos HTML por tipo, classe, ID e atributo.</li>
       <li>Todos os elementos podem ser selecionados usando o seletor universal.</li>
@@ -102,10 +99,6 @@
       <li>Elementos aninhados podem ser selecionados separando os seletores com um espaço.</li>
       <li>Vários seletores não relacionados podem receber os mesmos estilos separando os nomes dos seletores com vírgulas.</li>
     </ul>
-
   </main>
-
-
-
 </body>
 </html>
